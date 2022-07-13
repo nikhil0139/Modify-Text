@@ -6,7 +6,7 @@ export default function TextForm(props) {
   const convertUpperCase = () => {
     let newText = text.toUpperCase();
     setText(newText);
-    props.showAlert("Converted to upper cCase.", "success");
+    props.showAlert("Converted to upper case.", "success");
   };
 
   const convertLowerCase = () => {
@@ -37,7 +37,7 @@ export default function TextForm(props) {
       .map((el) => el.charAt(0).toUpperCase() + el.slice(1))
       .join(" ");
     setText(newText);
-    props.showAlert("First Letter of each word is capitalized.", "success");
+    props.showAlert("First Letter is capitalized.", "success");
   };
 
   const countVowels = () => {
